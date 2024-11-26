@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propeller Project - AEGIS Inspired</title>
+  <style>
+    /* General styling */
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #003f5c, #2f4b7c); /* Ocean blue theme */
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 60%;
+      max-width: 400px;
+      border: 3px solid white;
+      border-radius: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+
+    /* Bubbles */
+    .bubble {
+      position: absolute;
+      bottom: -100px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      animation: float 8s infinite ease-in;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+
+    /* Submarine */
+    .submarine {
+      position: absolute;
+      width: 60px;
+      height: 30px;
+      background: #f4c542; /* Yellow submarine */
+      border-radius: 50px 50px 40px 40px;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .submarine::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #f4c542;
+      border-radius: 50%;
+      top: 5px;
+      left: -10px;
+    }
+
+    .submarine::after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #ffffff;
+      border-radius: 50%;
+      top: 8px;
+      right: 8px;
+    }
+
+    .submarine .periscope {
+      position: absolute;
+      width: 10px;
+      height: 20px;
+      background: #f4c542;
+      top: -20px;
+      left: 25px;
+      border-radius: 44444444444px 444444444px  0;
+    }
+
+    .submarine .periscope::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: px;
+      background: #f4c542;
+      top: -px;
+      left: -4px;
+      border-radius: px;
+    }
+  </style>
+</head>
+<body>
+  <h1> SEDLAIA PARK'S ROBOTICS PROJECT!</h1>
+  <h2>The problem</h2>
+  <h3>More then 60 million fish get hurt or killed by ocean noice. What is ocean noise? Well ocean noise is when sonar or motor engines disrubt fishes from doing their normal lifestyle such as migration and mating but the problem we want to solve is that when this "noise" disrupts fish many of them get attracted by these noises and because of this many fish get killed by the propeller. This is our problem. </h3>
+  <h2>Our Ideas</h2>
+  <p><strong>First idea:</strong> A hard mesh around the propeller so fish can get knocked off instead of getting sucked in.</p>
+  <p><strong>Second idea:</strong> A better version of the AEGIS propeller that can be 3D printed to test out.</p>
+  <p><strong>Third idea:</strong> Use ideas from FinX to help design and develop the project.</p>
+  <p><strong>Fourth idea:</strong> Jets that push out water instead of propellers (Water Jets).</p>
+  <p><strong>Fifth idea:</strong> Use a better propeller that emits a bad but safe smell that fish won’t like.</p>
+
+  <h2>Our Choice</h2>
+  <p>We chose the <strong>first option</strong> and 3D printed a propeller design with a hard mesh to protect fish from getting sucked in.</p>
+  <h2>What we did</h2>
+  <h3>After researching different approaches and ideas we settled on making and 3d printing a proppeller with drag resistent blades and a smoother blade so fish can go near the proppeler without getting very hurt.</h3>
+
+  <div class="image-container"
+    <img src="https://cdn11.bigcommerce.com/s-ydm181c/images/stencil/1280w/products/15915/30490/turning-point-aegis-3-blade-stainless-steel-propeller-a1-model-202507-3135_std__32750.1585121608.jpg?c=2" alt="AEGIS Propeller">
+    <p>AEGIS propeller for inspiration</p>
+  </div>
+
+  <div class="footer">
+    <p>Thank you for listening, boat owners!</p>
+  </div>
+
+  <!-- Bubbles -->
+  <div class="bubble" style="width: 20px; height: 20px; left: 10%; animation-delay: 0s;"></div>
+  <div class="bubble" style="width: 25px; height: 25px; left: 25%; animation-delay: 2s;"></div>
+  <div class="bubble" style="width: 15px; height: 15px; left: 50%; animation-delay: 4s;"></div>
+  <div class="bubble" style="width: 30px; height: 30px; left: 70%; animation-delay: 1s;"></div>
+  <div class="bubble" style="width: 18px; height: 18px; left: 90%; animation-delay: 3s;"></div>
+
+  <!-- Submarine -->
+  <div class="submarine">
+    <div class="periscope"></div>
+  </div>
+</body>
+</html>
